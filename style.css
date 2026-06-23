@@ -1,0 +1,329 @@
+/* =========================
+   FAITH BLOOM STYLE.CSS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+    background:#0b1f3a;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav h2{
+    color:#d4af37;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    background:linear-gradient(
+        rgba(11,31,58,0.80),
+        rgba(11,31,58,0.80)
+    ),
+    url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=1600");
+
+    background-size:cover;
+    background-position:center;
+
+    min-height:85vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+
+    padding:40px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:35px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons{
+    margin-top:20px;
+}
+
+.btn{
+    display:inline-block;
+
+    background:#d4af37;
+    color:#0b1f3a;
+
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border:none;
+    border-radius:30px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    margin:10px;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.btn-outline{
+    background:transparent;
+    color:white;
+    border:2px solid white;
+}
+
+/* =========================
+   WELCOME SECTION
+========================= */
+
+.welcome{
+    text-align:center;
+    padding:80px 10%;
+    background:white;
+}
+
+.welcome h2{
+    color:#0b1f3a;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.welcome p{
+    max-width:800px;
+    margin:auto;
+}
+
+/* =========================
+   VERSE SECTION
+========================= */
+
+.verse-section{
+    text-align:center;
+    padding:80px 10%;
+}
+
+.verse-section h2{
+    color:#0b1f3a;
+    margin-bottom:20px;
+}
+
+.popup{
+    display:none;
+
+    max-width:700px;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.popup h4{
+    color:#d4af37;
+    margin-top:15px;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.features h2{
+    color:#0b1f3a;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+
+    width:260px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#0b1f3a;
+    margin-bottom:15px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+    text-align:center;
+    padding:80px 10%;
+    background:white;
+}
+
+.about h2{
+    color:#0b1f3a;
+    margin-bottom:20px;
+}
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote{
+    text-align:center;
+
+    padding:80px 10%;
+
+    background:#0b1f3a;
+
+    color:white;
+}
+
+.quote blockquote{
+    font-size:2rem;
+    font-style:italic;
+    margin-bottom:20px;
+}
+
+.quote h3{
+    color:#d4af37;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#071427;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .card{
+        width:100%;
+        max-width:320px;
+    }
+
+    .quote blockquote{
+        font-size:1.4rem;
+    }
+}
